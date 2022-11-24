@@ -1,0 +1,16 @@
+#LAB-9 write a program for hamilton cycle using backtracking
+class Hamiltonian:
+    def __init__(self, begin):
+        # start
+        self.begin = begin
+ 
+        # list to store the cycle path
+        self.cycle = []
+ 
+        # variable to mark if graph has the cycle
+        self.hasCycle = False
+ 
+    # method to initiate the search of cycle
+    def findCycle(self):
+        # add starting vertex to the list
+        self.cycle.append(self.begin)
